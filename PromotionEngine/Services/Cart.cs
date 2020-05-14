@@ -67,5 +67,13 @@ namespace PromotionEngine.Services
             CartItem removedItem = new CartItem(productId);
             Items.Remove(removedItem);
         }
+        public decimal GetSubTotal()
+        {
+            decimal subTotal = 0;
+            foreach (CartItem item in Items)
+                subTotal += item.TotalPrice;
+
+            return subTotal;
+        }
     }
 }
