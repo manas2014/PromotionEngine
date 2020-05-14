@@ -1,4 +1,5 @@
 ﻿using System;
+using PromotionEngine.Services;
 
 namespace PromotionEngine
 {
@@ -6,7 +7,9 @@ namespace PromotionEngine
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Cart objCart = new Cart();
+            objCart.AddItem(1);
+            
         }
     }
 }
