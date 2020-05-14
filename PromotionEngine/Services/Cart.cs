@@ -8,12 +8,15 @@ namespace PromotionEngine.Services
 {
     class Cart
     {
-        public List<CartItem> Items { get; private set; }
+        public static List<CartItem> Items  = new List<CartItem>();
 
         public static readonly Cart _Cart;
         static Cart()
         {
-           _Cart = new Cart();
+
+            Items.Add(new CartItem(1));
+            Items.Add(new CartItem(2));
+            Items.Add(new CartItem(3));
         }
 
         public void AddItem(int productId)
@@ -39,6 +42,30 @@ namespace PromotionEngine.Services
                 newItem.Quantity = 1;
                 Items.Add(newItem);
             }
+        }
+        public void SetItemQuantity(int productId, int quantity)
+        {
+            if (quantity == 0)
+            {
+                RemoveItem(productId);
+                return;
+            }
+
+            CartItem updatedItem = new CartItem(productId);
+
+            foreach (CartItem item in Items)
+            {
+                if (item.Equals(updatedItem))
+                {
+                    item.Quantity = quantity;
+                    return;
+                }
+            }
+        }
+        public void RemoveItem(int productId)
+        {
+            CartItem removedItem = new CartItem(productId);
+            Items.Remove(removedItem);
         }
     }
 }
