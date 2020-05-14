@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromotionEngine", "PromotionEngine\PromotionEngine.csproj", "{900B0C25-98EF-4214-BF82-77651CD7E24A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromotionEngine.Test", "PromotionEngine.Test\PromotionEngine.Test.csproj", "{269B8006-7D6B-46B3-8267-123F567407E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{900B0C25-98EF-4214-BF82-77651CD7E24A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{900B0C25-98EF-4214-BF82-77651CD7E24A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{900B0C25-98EF-4214-BF82-77651CD7E24A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{900B0C25-98EF-4214-BF82-77651CD7E24A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{269B8006-7D6B-46B3-8267-123F567407E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{269B8006-7D6B-46B3-8267-123F567407E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{269B8006-7D6B-46B3-8267-123F567407E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{269B8006-7D6B-46B3-8267-123F567407E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4664614-714E-4151-8811-01B3076E24F4}
+	EndGlobalSection
+EndGlobal
